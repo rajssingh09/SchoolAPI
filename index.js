@@ -46,7 +46,7 @@ app.post('/api/addSchool', async(req,res)=>{
 });
 
     // List Schools API (sorted by distance)
-   app.get('/listSchools', async (req, res) => {
+   app.get('/api/listSchools', async (req, res) => {
   try {
     const { latitude, longitude } = req.query;
     if (latitude && longitude) {
