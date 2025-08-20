@@ -20,6 +20,11 @@ app.listen(PORT, ()=>{
 })
 })
 
+app.get("/", (req, res) => {
+  res.send("School API is live! Use /api/addSchool and /api/listSchools");
+});
+
+
 // Add School API
 app.post('/api/addSchool', async(req,res)=>{
     const {name ,address, latitude, longitude } = req.body;
